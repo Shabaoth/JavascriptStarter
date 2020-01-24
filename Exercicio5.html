@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>        
+        <script>
+        
+        function getDev(usuario){
+            
+            for(let dev of usuario){
+                console.log("O "+dev.nome+" possui as habilidades: "+
+                dev.habilidades.join(", "));
+            }
+        }
+
+
+        var usuarios = [
+        {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+        ];
+
+        getDev(usuarios);        
+        </script>        
+        </body>
+    </html>
