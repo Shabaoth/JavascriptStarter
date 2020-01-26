@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+            function fat(num1, num2){
+                if (num1 === 0){
+                    return 1;
+                    }
+                else{ 
+                    return num1 * fat( num1 - 1 );
+                    }
+            }
+            
+            console.log(fat(5))
+        </script>
+    </body>
+</html>
